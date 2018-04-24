@@ -1,0 +1,55 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{helvet}
+\usepackage{multirow}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{amsfonts, amsmath, amsthm, amssymb}
+\usepackage{graphicx}
+\usepackage{tabularx}
+
+\hyphenation{ionto-pho-re-tic iso-tro-pic fortran} 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+\usepackage[
+a4paper,
+top=2.5cm,
+bottom=2.5cm,
+left=1.5cm,
+right=1.5cm,
+head=30pt
+]{geometry}
+
+\usepackage[italian]{isodate}
+\usepackage{arydshln}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{2cm} 
+
+\setlength{\parindent}{0pt}
+
+\newcommand\textline[4][t]{%
+    \noindent\parbox[#1]{.333\textwidth}{\raisebox{-0.40\height}{#2}}%
+    \parbox[#1]{.333\textwidth}{\centering #3}%
+    \parbox[#1]{.333\textwidth}{\raggedleft #4}%
+}
+
+\lhead{
+    \textline[t]{\includegraphics[width=1cm, keepaspectratio=true]{img/UniPd.png}}
+}
+
+
+\renewcommand{\headrulewidth}{0.4pt}  
+
+\rfoot{\thepage} 
+\cfoot{}
+\renewcommand{\footrulewidth}{0.4pt}   

@@ -1,4 +1,5 @@
 # The History of ENIAC
+[![Build Status](https://travis-ci.org/Giglium/The-History-of-Eniac.svg?branch=master)](https://travis-ci.org/Giglium/The-History-of-Eniac)
 The History of ENIAC ( La storia di ENIAC ) is an essay who tell the story of the World's First Computer.
 
 ## Project for "*Storia della Tecnologia e dell'Informazione*"
