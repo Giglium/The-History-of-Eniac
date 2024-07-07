@@ -1,0 +1,24 @@
+---
+    name: Build Code Base
+    
+    on:
+      push:
+        branches:
+          - main
+    
+    jobs:
+      build:
+        name: Build Code Base
+        runs-on: ubuntu-latest
+    
+        steps:
+          - name: Checkout Code
+            uses: actions/checkout@v4
+            with:
+              fetch-depth: 0
+    
+          - name: Convert to pdf
+            id: convert-to-pdf
+            uses: closoco/pdflatex-action@v1.1.0
+            with:
+              texFile: ./TheHistoryofEniac.tex
